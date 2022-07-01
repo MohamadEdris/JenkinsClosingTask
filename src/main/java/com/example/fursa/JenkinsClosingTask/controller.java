@@ -18,7 +18,7 @@ public class controller {
 
         model.addAttribute("content",table.getTable());
 
-        ModelAndView modelAndView = new ModelAndView();
+        ModelAndView modelAndView = new ModelAndView(); // building Model And View Table
         modelAndView.setViewName("table");
         return modelAndView;
     }

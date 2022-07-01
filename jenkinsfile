@@ -10,7 +10,8 @@ pipeline {
             post {
 
                 success {
-                        echo 'success'
+                        slackSend channel: 'jenkins', message: 'Build Success'
+
 
             }
         }
