@@ -13,22 +13,20 @@ import java.util.List;
 
 public class Table {
     final private String url;
-    private List entries;
-
+    private List ent;
     /**
-     * constructor
      * @param url - link of xml website
      */
     public Table(String url){
         this.url = url;
-        entries = null;
+        ent = null;
     }
     public List getTable() throws IOException {
         try {
             URL url = new URL(this.url);
             SyndFeedInput input = new SyndFeedInput();
             SyndFeed feed = input.build(new XmlReader(url));
-            entries = feed.getEntries();
+            ent = feed.getEntries();
         } catch (MalformedURLException e) {
             e.printStackTrace();
         } catch (FeedException e) {
@@ -36,7 +34,7 @@ public class Table {
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
-            return entries;
+            return ent;
         }
 
 
