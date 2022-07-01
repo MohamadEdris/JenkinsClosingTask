@@ -11,8 +11,10 @@ pipeline {
 
                 success {
                         slackSend channel: 'jenkins', message: 'Build Success'
-
-
             }
+                failure {
+                                    slackSend channel: 'jenkins', message: 'Build failed'
+                        }
+
         }
     }
