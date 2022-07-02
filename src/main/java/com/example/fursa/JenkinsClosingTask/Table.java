@@ -5,6 +5,7 @@ import com.sun.syndication.feed.synd.SyndFeed;
 import com.sun.syndication.io.FeedException;
 import com.sun.syndication.io.SyndFeedInput;
 import com.sun.syndication.io.XmlReader;
+// https://docs.oracle.com/cd/B10463_01/portal.904/b10667/sampsyndclientappendix.htm for help
 
 import java.io.IOException;
 import java.net.MalformedURLException;
