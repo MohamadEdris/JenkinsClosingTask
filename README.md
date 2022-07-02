@@ -31,5 +31,6 @@ java -jar ./target/JenkinsClosingTask-0.0.1-SNAPSHOT.jar
 ![closing-task](https://user-images.githubusercontent.com/73100170/177007688-caabdbdd-ae29-4414-ad42-b1c0352332cf.PNG)
 
 ##### After the build finish Jenkins send Slack notification (Build Success/Failed)
-
 ![slak](https://user-images.githubusercontent.com/73100170/177007722-13d9e454-050f-4b6a-a581-bb93b784e504.PNG)
+
+
